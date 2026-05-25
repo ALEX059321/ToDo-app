@@ -1,9 +1,6 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactRefresh from 'eslint-plugin-react-refresh'
-import { defineConfig, globalIgnores } from 'eslint/config'
+import express from 'express';
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  
+const app = express();
+app.listen(1000, () => {
+    console.log("server started")
+})

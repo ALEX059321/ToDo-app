@@ -10,7 +10,7 @@ app.get("/",(req,res) => {
     res.send("hello world");
 });
 
-// attempt DB connection, then start server
+
 connectDB().catch(err => {
   console.error('DB connect failed:', err);
 });
